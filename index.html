@@ -15,8 +15,8 @@ Be free to use it and change it.
     <title>formulario-turno</title>
     <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap3.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
   </head>
 
   <body>
@@ -143,28 +143,28 @@ Be free to use it and change it.
         <div>
           <div class="row">
             <div class="col-xs-4"><p>Paciente: </p></div>
-            <div class="col-xs-6"><p id="modalApellidoYNombre"></p></div>
+            <div class="col-xs-6"><p class="modalApellidoYNombre"></p></div>
           </div>
           <div class="row">
             <div class="col-xs-4"><p>DNI: </p></div>
-            <div class="col-xs-6"><p id="modalDNI"></p></div>
+            <div class="col-xs-6"><p class="modalDNI"></p></div>
           </div>
           <div class="row">
             <div class="col-xs-4"><p>Email: </p></div>
-            <div class="col-xs-6"><p id="modalEmail"></p></div>
+            <div class="col-xs-6"><p class="modalEmail"></p></div>
           </div>
 
           <div class="row">
             <div class="col-xs-4">Fecha: </div>
-            <div class="col-xs-6" id="modalFecha"></div>
+            <div class="col-xs-6"><p class="modalFecha"></p></div>
           </div>
           <div class="row">
             <div class="col-xs-4">Horario: </div>
-            <div class="col-xs-6" id="modalHorario"></div>
+            <div class="col-xs-6"><p class="modalHorario"></p></div>
           </div>
           <div class="row">
             <div class="col-xs-4"><p>Motivo: </p></div>
-            <div class="col-xs-6"><p id="modalMotivo"></p></div>
+            <div class="col-xs-6"><p class="modalMotivo"></p></div>
           </div>
 
         </div>
@@ -175,8 +175,52 @@ Be free to use it and change it.
       </div>
     </section>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <section id="modalTurnoID">
+      <div id="modalBackground"></div>
+      <div class="modalContainer">
+        <h2>Turno confirmado</h2>
+        <div class="row">
+          <div class="col-xs-6"><h4>ID TURNO: </h4></div>
+          <div class="col-xs-6"><h4 id="idTurno"></h4></div>
+        </div>
+
+        <div>
+          <div class="row">
+            <div class="col-xs-4"><p>Paciente: </p></div>
+            <div class="col-xs-6"><p class="modalApellidoYNombre"></p></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4"><p>DNI: </p></div>
+            <div class="col-xs-6"><p class="modalDNI"></p></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4"><p>Email: </p></div>
+            <div class="col-xs-6"><p class="modalEmail"></p></div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4">Fecha: </div>
+            <div class="col-xs-6"><p class="modalFecha"></p></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">Horario: </div>
+            <div class="col-xs-6"><p class="modalHorario"></p></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4"><p>Motivo: </p></div>
+            <div class="col-xs-6"><p class="modalMotivo"></p></div>
+          </div>
+        </div>
+
+        <h3>
+          <button class="btn btn-primary" id="cerrarTurnoID">Cerrar</button>
+        </h3>
+      </div>
+    </section>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
